@@ -42,12 +42,24 @@ I want the response in one single string having the structure
 {{"JD_Match":"%","Grammar_score":"%","Content_score":"%","Clarity_score":"%","MissingKeywords":[], "candidate_skills":[],"General_feedback":""}}
 """
 
+input_question_prompt = """
+Given the provided resume and job description, generate a set of interview questions for a candidate applying for the role described. 
+Include a mix of general questions to assess personality, experience-related inquiries,questions related to job description,technical questions related to skills of candidate and interview closing questions.
+create 5 questions of each category.
+resume:{text}
+job description:{jd}
+
+I want the response in one single string having the structure
+{{"general_questions":[],"experience_related":[],"questions_on_job_description":[],"questions_on_skills":[],"interview_closing_questions":[]}}
+"""
+
 
 @app.post("/Resume_analyser/")
 async def submit_resume(jd: str = Form(...), resume: UploadFile = File(...)):
     text = input_pdf_text(resume)
-    response = get_gemini_response(input_prompt.format(text=text, jd=jd))
-    return {"response": response}
+    R_response = get_gemini_response(input_prompt.format(text=text, jd=jd))
+    Q_response = get_gemini_response(input_question_prompt.format(text=text, jd=jd))
+    return {"resume_response": R_response,"questions_response":Q_response}
 
 
 if __name__ == "__main__":
