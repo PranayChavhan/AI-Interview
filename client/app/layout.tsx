@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Interview-Prep-With-AI",
     description:
-      "PrepMe is an AI-powered mock interview platform that helps you practice for your next job interview.",
+      "TalentSpire is an AI-powered mock interview platform that helps you practice for your next job interview.",
     images: [
       {
         url: "https://www.canva.com/design/DAFpOt5MYDM/fyd8tA1hcSsxHMtVLiI1kg/view?mode=prototype",
@@ -17,11 +17,11 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Interview-Prep-With-AI",
     description:
-    "PrepMe is an AI-powered mock interview platform that helps you practice for your next job interview.",
+      "TalentSpire is an AI-powered mock interview platform that helps you practice for your next job interview.",
     images: ["https://www.canva.com/design/DAFpOt5MYDM/fyd8tA1hcSsxHMtVLiI1kg/view?mode=prototype"],
     creator: "@blufitechnology",
   },
-  metadataBase: new URL("https://prepme.blufitech.com"),
+  metadataBase: new URL("https://TalentSpire.blufitech.com"),
   themeColor: "#FFF",
 };
 
