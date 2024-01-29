@@ -1,6 +1,6 @@
-![PrepMe (1200 × 630 px)](https://github.com/Blu-Fi-Tech-Inc/Interview-Prep-With-AI/assets/98633589/717949e4-7e69-4100-94cb-7c9b4f0bac12)
-<a href="https://prepme.blufitech.com">
-  "PrepMe – AI Generated Interviews"
+![TalentSpire (1200 × 630 px)](https://github.com/Blu-Fi-Tech-Inc/Interview-Prep-With-AI/assets/98633589/717949e4-7e69-4100-94cb-7c9b4f0bac12)
+<a href="https://TalentSpire.blufitech.com">
+  "TalentSpire – AI Generated Interviews"
   <h1 align="center">Interview-Prep-With-AI</h1>
 </a>
 
@@ -27,7 +27,7 @@
 
 ## Introduction
 
-PrepMe is an interview preparation tool that provides AI feedback and suggestions.
+TalentSpire is an interview preparation tool that provides AI feedback and suggestions.
 
 ## One-click Deploy
 
@@ -43,9 +43,9 @@ npx create-next-app interview-prep-with-ai --example "https://github.com/Blu-Fi-
 
 ## Tech Stack + Features
 
-Landing Page (https://prepme.blufitech.com/)
+Landing Page (https://TalentSpire.blufitech.com/)
 
-Interview Selection (https://prepme.blufitech.com/demo)
+Interview Selection (https://TalentSpire.blufitech.com/demo)
 
 ### Frameworks
 
@@ -77,7 +77,7 @@ Interview Selection (https://prepme.blufitech.com/demo)
 
 ## How it all works
 
-PrepMe uses FFmpeg to transcode the raw video into MP3. Chrome, Safari, and Firefox all record with different codecs, and FFmpeg is great for standardizing them.
+TalentSpire uses FFmpeg to transcode the raw video into MP3. Chrome, Safari, and Firefox all record with different codecs, and FFmpeg is great for standardizing them.
 
 We then send the audio directly to be transcribed by OpenAI's Whisper endpoint, and then stream feedback from the edge using OpenAI's gpt-3.5-turbo.
 

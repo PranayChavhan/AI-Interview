@@ -29,6 +29,18 @@ export default function Home() {
           <rect width="100%" height="100%" filter="url(#noise)"></rect>
         </svg>
         <main className="flex flex-col justify-center h-[90%] static md:fixed w-screen overflow-hidden grid-rows-[1fr_repeat(3,auto)_1fr] z-[100] pt-[30px] pb-[320px] px-4 md:px-20 md:py-0">
+          <motion.h1
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0.15,
+              duration: 0.95,
+              ease: [0.165, 0.84, 0.44, 1],
+            }}
+            className="relative md:ml-[-10px] md:mb-[37px] font-bold text-[4vw] md:text-[30px] font-inter text-[#1E2B3A] leading-[0.9] tracking- z-[100]"
+          >
+            Talent<span className="text-blue-400">Spire</span>
+
+          </motion.h1>
           <motion.svg
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
@@ -59,10 +71,10 @@ export default function Home() {
             className="relative md:ml-[-10px] md:mb-[37px] font-extrabold text-[16vw] md:text-[130px] font-inter text-[#1E2B3A] leading-[0.9] tracking-[-2px] z-[100]"
           >
             Elevate your <br />
-            job <span className="text-[#407BBF]">interviews</span>
-            <span className="font-inter text-[#407BBF]">.</span>
+            job <span className="text-blue-400">interviews</span>
+            <span className="font-inter text-blue-400">.</span>
           </motion.h1>
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
@@ -72,7 +84,7 @@ export default function Home() {
             }}
             className="flex flex-row justify-center z-20 mx-0 mb-0 mt-8 md:mt-0 md:mb-[35px] max-w-2xl md:space-x-8"
           >
-            <div className="w-1/2">
+             <div className="w-1/2">
               <h2 className="flex items-center font-semibold text-[1em] text-[#1a2b3b]">
                 Platform
               </h2>
@@ -90,9 +102,9 @@ export default function Home() {
                 other and build together.
               </p>
             </div>
-          </motion.div>
+          </motion.div> */}
 
-          <div className="flex gap-[15px] mt-8 md:mt-0">
+          <div className="flex mt-20 md:mt-10">
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
@@ -102,7 +114,7 @@ export default function Home() {
                 ease: [0.075, 0.82, 0.965, 1],
               }}
             >
-              <Link
+              {/* <Link
                 href="https://github.com/Blu-Fi-Tech-Inc/Interview-Prep-With-AI"
                 target="_blank"
                 className="group rounded-full pl-[8px] min-w-[180px] pr-4 py-2 text-[13px] font-semibold transition-all flex items-center justify-center bg-[#1E2B3A] text-white hover:[linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), #0D2247] no-underline flex gap-x-2  active:scale-95 scale-100 duration-75"
@@ -134,7 +146,7 @@ export default function Home() {
                   </svg>
                 </span>
                 Star on Github
-              </Link>
+              </Link> */}
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 40 }}
@@ -147,12 +159,12 @@ export default function Home() {
             >
               <Link
                 href="/demo"
-                className="group rounded-full px-4 py-2 text-[13px] font-semibold transition-all flex items-center justify-center bg-[#f5f7f9] text-[#1E2B3A] no-underline active:scale-95 scale-100 duration-75"
+                className="group rounded-full px-4 py-2 text-[13px] font-semibold hover:bg-blue-200 transition-all flex items-center justify-center bg-[#f5f7f9] text-[#1E2B3A] no-underline active:scale-95 scale-100 duration-75"
                 style={{
                   boxShadow: "0 1px 1px #0c192714, 0 1px 3px #0c192724",
                 }}
               >
-                <span className="mr-2"> Try it out </span>
+                <span className="mr-2"> Let&apos;s Try it </span>
                 <svg
                   className="w-5 h-5"
                   viewBox="0 0 24 24"
