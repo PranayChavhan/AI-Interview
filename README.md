@@ -30,7 +30,7 @@ Create a .env file in the server directory and configure necessary variables.
 Start the NodeJS server:
 ```bash
 cd server
-node index.js
+node main.js
 ```
 
 Start the React app:
